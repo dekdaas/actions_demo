@@ -1,1 +1,8 @@
-name: Hello world!
+name: Hello World!
+run-name: My first workflow run!
+on: [push]
+jobs:
+  print-to-console:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Congrats on your first run!"
